@@ -24,8 +24,10 @@ OBJ_LIST  = \
   hashes.o \
   adapters/xxh3_128.o \
   adapters/lemac.o \
+  adapters/petitmac.o \
   xxhash/xxhash.o \
-  lemac/lemac.o
+  lemac/lemac.o \
+  petitmac/petitmac.o
 
 default: benchHash
 all: benchHash
@@ -61,3 +63,4 @@ clean:
 	$(RM) adapters/*.o
 	$(RM) xxhash/*.o
 	$(RM) lemac/*.o
+	$(RM) petitmac/*.o
